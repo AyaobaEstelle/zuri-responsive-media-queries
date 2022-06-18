@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+section{
+  max-width: 100%;
+  width: 50%;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url("../bg-intro-desktop.png");
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+  padding: 0px 160px; 
+}
+
+.info{
+  color: #fff;
+  padding: 30px;
+}
+
+
+h1{
+  font-size: 50px;
+  line-height: 56px;
+  margin-bottom: 25px;
+}
+
+.info p{
+  line-height: 26px;
+  opacity: 0.6;
+}
+
+.try {
+  width: 90%;
+  background-color: hsl(248, 32%, 49%);
+  color: whitesmoke;
+  padding: 15px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding-right: 30;
+}
+
+.try span{
+  color: white;
+  font-weight: 600;
+}
+
+#form{
+  width: 90%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  padding: 35px;
+
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+
+}
+
+form small {
+  position: absolute;
+  text-align: right;
+  bottom: -30px;
+  right: 0;
+  opacity: 0;
+}
+
+form small{
+  display: none;
+}
+
+
+input, button{
+  padding: 17px 25px;
+  margin-bottom: 18px;
+  border: 1px solid #efefef;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+button{
+  text-transform: uppercase;
+  color: #fff;
+  background-color: hsl(154, 59%, 51%);
+  font-size: 16px;
+  cursor: pointer;
+  transition: all;
+  transition-duration: 0.3s;
+}
+button:hover{
+  background-color: hsl(154, 59%, 60%);
+}
+
+form p{
+  font-size: 13px;
+  margin: auto;
+  color:  hsl(246, 25%, 77%);
+}
+
+form p span{
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+
+small {
+  display: block;
+  color: hsl(246, 25%, 77%);
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+@media (max-width: 992px) {
+  main{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/bg-into-mobile.png);
+    background-color: hsl(0, 100%, 74%);
+    padding: 40px 20px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+ .info {
+   align-items: center;
+   padding: 38px 0 58px;
+ }
+ form p{
+   text-align: center;
+ }
+ h1{
+   font-size: 35px;
+ }
+ .try{
+   padding: 15px 60px;
+ }
+}
